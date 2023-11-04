@@ -1,0 +1,23 @@
+<div class="caja_principal">
+    <h1>
+        Solicitud de Datos para Creación de Campañas</h1>
+    <form action="procesar_formulario.php" method="post">
+        <label for="nombre_campaña">Nombre de la Campaña:</label>
+        <input type="text" id="nombre_campaña" name="nombre_campaña" required>
+
+        <label for="fecha_inicio">Fecha de Inicio:</label>
+        <input type="date" id="fecha_inicio" name="fecha_inicio" required>
+
+        <label for="fecha_fin">Fecha de Finalización:</label>
+        <input type="date" id="fecha_fin" name="fecha_fin" required>
+
+        <label for="objetivo">Objetivo de la Campaña:</label>
+        <textarea id="objetivo" name="objetivo" rows="4" required></textarea>
+
+        <label for="presupuesto">Grupo:</label>
+        <input type="text" id="grupo" name="grupo" required>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+</div>
