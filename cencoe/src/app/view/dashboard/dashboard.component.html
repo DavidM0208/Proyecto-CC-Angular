@@ -1,0 +1,103 @@
+<div class="grid-container">
+  <h1 class="mat-h1">ProyectoCencoe </h1>
+  <mat-grid-list cols="2" rowHeight="500px">
+    <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
+      <mat-card class="dashboard-card">
+
+        <mat-card-content class="dashboard-card-content">
+          <div class="g-col-3 g-start-2">
+            <h1>Creación de Usuarios</h1>
+            <form action="procesar_formulario.php" method="post">
+              <label for="nombre_usuario">Nombre de Usuario:</label>
+              <input type="text" id="nombre_usuario" name="nombre_usuario" required>
+
+              <label for="apellido_usuario">Apellido de Usuario:</label>
+              <input type="text" id="apellido_usuario" name="apellido_usuario" required>
+
+              <label for="direccion_usuario">Direccion de Usuario:</label>
+              <input type="text" id="direccion_usuario" name="direccion_usuario" required>
+
+              <label for="email_usuario">Email de Usuario:</label>
+              <input type="email" id="email_usuario" name="email_usuario" required>
+
+              <label for="telefono_usuario">Telefono de Usuario:</label>
+              <input type="text" id="telefono_usuario" name="telefono_usuario" required>
+
+              <label for="fecha_inicio">Fecha de Inicio:</label>
+              <input type="date" id="fecha_inicio" name="fecha_inicio" required>
+
+              <label for="roll_usuario">Roll:</label>
+              <input type="text" id="roll_usuario" name="roll_usuario" required>
+
+              <input type="submit" value="Guardar">
+
+            </form>
+
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  <div class="g-col-3 g-start-6">
+    <h1>Usuario</h1>
+    <form action="procesar_formulario.php" method="post">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          <div class="caja_principal">
+            <input type="text" id="nombre_usuario" name="Nombre de la Campaña:" required>
+            <input type="text" id="nombre_usuario" name="Fecha de Inicio:" required>
+            <input type="text" id="nombre_usuario" name="Fecha de Finalización:" required>
+            <input type="text" id="nombre_usuario" name="Objetivo de la Campaña:" required>
+          </div>
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked">
+          <div class="caja_principal">
+            <input type="text" id="nombre_campaña" name="Nombre de la Campaña:" required>
+            <input type="text" id="nombre_campaña" name="Fecha de Inicio:" required>
+            <input type="text" id="nombre_campaña" name="Fecha de Finalización:" required>
+            <input type="text" id="nombre_campaña" name="Objetivo de la Campaña:" required>
+          </div>
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked">
+          <div class="caja_principal">
+            <input type="text" id="nombre_campaña" name="Nombre de la Campaña:" required>
+            <input type="text" id="nombre_campaña" name="Fecha de Inicio:" required>
+            <input type="text" id="nombre_campaña" name="Fecha de Finalización:" required>
+            <input type="text" id="nombre_campaña" name="Objetivo de la Campaña:" required>
+          </div>
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked">
+          <div class="caja_principal">
+            <input type="text" id="nombre_campaña" name="Nombre de la Campaña:" required>
+            <input type="text" id="nombre_campaña" name="Fecha de Inicio:" required>
+            <input type="text" id="nombre_campaña" name="Fecha de Finalización:" required>
+            <input type="text" id="nombre_campaña" name="Objetivo de la Campaña:" required>
+          </div>
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked">
+          <div class="caja_principal">
+            <input type="text" id="nombre_campaña" name="Nombre de la Campaña:" required>
+            <input type="text" id="nombre_campaña" name="Fecha de Inicio:" required>
+            <input type="text" id="nombre_campaña" name="Fecha de Finalización:" required>
+            <input type="text" id="nombre_campaña" name="Objetivo de la Campaña:" required>
+          </div>
+        </label>
+      </div>
+      <input type="submit" value="Modificar">
+    </form>
+  </div>
+</div>
