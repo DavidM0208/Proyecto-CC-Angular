@@ -15,14 +15,14 @@ export class DashboardComponent {
     map(({ matches }) => {
       if (matches) {
         return [
-          { title: 'g-col-3 g-start-6', cols: 0, rows: 0},
-          { title: 'g-col-3 g-start-6', cols: 0, rows: 0 }
+          { title: 'Card 2', cols: 0, rows: 0},
+          { title: 'Usuario', cols: 2, rows: 2 }
       
         ];
       }
 
       return [
-        { title: 'g-col-3 g-start-6', cols: 1, rows: 1 },
+        { title: 'Card 2', cols: 2, rows: 2 },
         { title: 'Usuario', cols: 2, rows: 2 }
       ];
     })
